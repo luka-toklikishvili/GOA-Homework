@@ -1,5 +1,4 @@
 
-
 name=input("enter you name: ")
 print(name)
 
@@ -33,6 +32,5 @@ school=input("enter your school: ")
 name=input("enter your name: ") 
 lastname=input("enter your lastname: ")
 age=input("enter you age: ")
-
 
 print(name+" "+lastname+" "+"is"+" "+age+" "+"years old "+" "+"studyes at "+" "+school+" "+"studyes programing at"+" "+academy)
