@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Social Media Site</title>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#login">შესვლა</a> |
+        <a href="#registration">რეგისტრაცია</a> |
+        <a href="#about">საიტის შესახებ</a>
+    </nav>
+</header>
+
+<h1>კეთილი იყოს თქვენი მობრძანება!</h1>
+
+<section id="login">
+    <h2>შესვლის ფორმა</h2>
+    <form action="/login" method="POST">
+        <label for="email">ელ. ფოსტა:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">პაროლი:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="submit" value="შესვლა">
+    </form>
+</section>
+
+<section id="registration">
+    <h2 id="registration">რეგისტრაციის ფორმა</h2>
+    <form>
+        <label for="username">მომხმარებლის სახელი:</label>
+        <input type="text" id="username" name="username" ><br>
+
+        <label for="email">ელ. ფოსტა:</label>
+        <input type="email" id="email" name="email" ><br>
+
+        <label for="password">პაროლი:</label>
+        <input type="password" id="password" name="password" ><br>
+
+        <label for="gender">სქესი:</label>
+        <input type="radio" id="male" name="gender" value="male" >
+        <label for="male">კაცი</label>
+        <input type="radio" id="female" name="gender" value="female" >
+        <label for="female">ქალი</label><br>
+
+        <label for="birthdate">დაბადების თარიღი:</label>
+        <input type="date" id="birthdate" name="birthdate"><br>
+
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms">მეთანხმები ვებსაიტის პირობებს</label><br>
+
+        <input type="submit" value="რეგისტრაცია">
+    </form>
+</section>
+
+
+    <h2 id="id="about"">საიტის შესახებ</h2>
+    <p>ეს არის თმის ვებსაიტი, რომელიც საშუალებას გაწვდით გაიღოთ ახალი მეგობრები, გაგიზიაროთ გამოცდილება და გაუზიაროთ ფოტოები.</p>
+  
+
+
+    
+
+
+</body>
+</html>
