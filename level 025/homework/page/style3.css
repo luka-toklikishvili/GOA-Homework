@@ -1,0 +1,46 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #9d1616;
+            margin: 0;
+            padding: 0;
+            color: #010101;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            background-color: #222;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin:  15px;
+          
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            width: 100%;
+        }
+        .content img {
+           
+            border-radius: 8px;
+            height: 450px;
+        }
+    
