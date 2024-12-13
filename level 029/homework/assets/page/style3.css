@@ -1,0 +1,44 @@
+@font-face {
+    font-family: nino mtavruli;
+    src: url(../fonts/bpg_nino_mtavruli_normal_[FONTS.GE]/bpg_nino_mtavruli_normal.ttf);
+}
+body {
+    font-family: nino mtavruli, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+}
+nav {
+    background-color: #333;
+
+}
+nav a {
+    color: white;
+    padding: 14px;
+    
+}
+
+section {
+    padding: 20px;
+}
+
+.bio img {
+    width: 200px;
+    border-radius: 10px;
+}
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
