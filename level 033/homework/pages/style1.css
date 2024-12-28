@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.custom-div{
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+
+    border-top: 5px solid red; 
+    border-right: 5px solid green; 
+    border-bottom: 5px solid blue; 
+    border-left: 5px solid yellow; 
+}
