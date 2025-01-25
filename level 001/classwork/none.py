@@ -1,0 +1,1 @@
+print("luka "+str(14)+ " "+str(175))

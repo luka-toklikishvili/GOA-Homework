@@ -1,0 +1,15 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    background-color: aquamarine;
+    padding: 8px;
+    text-align: left;
+  }
+tr:nth-child(1){
+    width: 100%;
+    text-align: center;
+    background-color: #4effd6;
+}

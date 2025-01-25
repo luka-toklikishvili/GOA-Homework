@@ -1,0 +1,23 @@
+body {
+    background: linear-gradient(to right, #0077b6, #dd81ff);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background-color: #1e38aa;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+    background-color: #5470c2;
+    color: white;
+}
