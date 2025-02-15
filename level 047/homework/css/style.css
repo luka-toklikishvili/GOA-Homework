@@ -1,0 +1,25 @@
+.container {
+    width: 90%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+.box {
+    width: 100px;
+    height: 70px;
+    border: 2px solid red;
+}
+
+.special {
+    border: 2px solid blue;
+    height: 100px;
+    width: 70px;
+}
