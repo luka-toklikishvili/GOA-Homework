@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog View</title>
+    <link rel="stylesheet" href="./css/ticket.css">
+</head>
+
+<body>
+    <main role="main">
+        <!-- Background Patterns -->
+        <img id="bg-squiggly-top" src="./assets/images/pattern-squiggly-line-top.svg" alt="">
+        <img id="bg-squiggly-bottom" src="./assets/images/pattern-squiggly-line-bottom-desktop.svg" alt="">
+        <img id="bg-dots" src="./assets/images/pattern-circle.svg" alt="">
+        <img id="bg-dots-2" src="./assets/images/pattern-circle.svg" alt="">
+
+        <div class="container">
+            <!-- Header -->
+            <div class="top flexDev">
+                <img src="./assets/images/logo-mark.svg" alt="logo">
+                <h2>Coding Conf</h2>
+            </div>
+
+            <!-- Intro Section -->
+            <div class="intro-container flexDev">
+                <p class="intro intro-main-ticket">
+                    Congrats,<br>
+                    <span id="name">Luka</span>! <br>
+                    Your ticket is ready.
+                </p>
+                <p class="intro-sub-ticket">
+                    We've emailed your ticket to <br>
+                    <span id="email">Luka@gmail.com</span> and will send updates leading up to the event.
+                </p>
+            </div>
+
+            <!-- Ticket Section -->
+            <div class="ticket-container flexDev">
+                <div class="ticket-left flexDev">
+                    <div class="ticket-header flexDev">
+                        <img src="./assets/images/logo-mark.svg" alt="icon">
+                        <div class="ticket-title flexDev">
+                            <h2>Coding Conf</h2>
+                            <p id="date">August 2021 / AUTH, TX</p>
+                        </div>
+                    </div>
+
+                    <div class="ticket-item flexDev">
+                        <img 
+                            src="./assets/images/image-avatar.jpg" 
+                            alt="User Avatar" 
+                            id="userImageUpload"
+                            class="user-avatar"
+                        >
+                        <div class="ticket-item-text flexDev">
+                            <h3>Luka Toklikishvili</h3>
+                            <label for="github">
+                                <img src="./assets/images/icon-github.svg" alt="GitHub Icon">
+                                <span id="github">@luka</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ticket-right">
+                    <h3>#123456789</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
