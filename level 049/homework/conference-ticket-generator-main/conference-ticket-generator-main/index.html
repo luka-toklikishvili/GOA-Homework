@@ -5,12 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ticket Generator</title>
-  <link type="text/css" rel="stylesheet" href="./Css/style.css" />
+  <link rel="stylesheet" href="./Css/style.css" />
 </head>
-
 <body>
   <main role="main">
-    <!-- Background Elements -->
+    <!-- Background  -->
     <div class="background-elements">
       <img id="bg-squiggly-top" src="./assets/images/pattern-squiggly-line-top.svg" alt="" />
       <img id="bg-squiggly-bottom" src="./assets/images/pattern-squiggly-line-bottom.svg" alt="" />
@@ -18,28 +17,27 @@
       <img id="bg-dots-2" src="./assets/images/pattern-circle.svg" alt="" />
     </div>
 
-    <!-- Main Container -->
+    <!-- Main  -->
     <div class="container">
-      <header class="top flexDev">
+      <header class="top flex">
         <img src="./assets/images/logo-mark.svg" alt="Coding Conf Logo" />
         <h2>Coding Conf</h2>
       </header>
 
-      <section class="intro-container flexDev">
+      <section class="intro-container flex">
         <h1 class="intro">Your Journey to Coding Conf 2025 Starts Here!</h1>
         <p class="intro-sub">Secure your spot at next year's biggest coding conference.</p>
       </section>
 
       <!-- Form Section -->
-      <div class="form-container flexDev">
+      <div class="form-container flex">
         <div class="form">
           <!-- Avatar Upload -->
-          <div class="form-group flexDev">
+          <div class="form-group flex">
             <label for="image">Upload Avatar</label>
             <div class="input-file">
               <div class="image-preview" id="image-preview">
-                <img src="./assets/images/image-avatar.jpg" alt="preview" id="show-image-user" />
-                <div class="image-button-action flexDev">
+                <div class="image-button-action flex">
                   <button type="button" id="remove-image" class="btn-action-image">Remove</button>
                   <button type="button" id="change-image" class="btn-action-image">Change</button>
                 </div>
@@ -49,7 +47,7 @@
                   <img src="./assets/images/icon-upload.svg" alt="Upload Icon" />
                 </label>
                 <p>Drag & Drop or Click to Upload</p>
-                <input id="file-input" type="file" required />
+                <input id="file-input" type="file"  />
               </div>
             </div>
             <label class="label-file" id="file-error">
@@ -58,25 +56,23 @@
             </label>
           </div>
 
-          <!-- Form Fields -->
-          <div class="form-group flexDev">
+          <!-- Form  -->
+          <div class="form-group flex">
             <label for="fullName">Full Name</label>
-            <input id="fullName" type="text" name="name" required />
+            <input id="fullName" type="text" name="name"  />
           </div>
 
-          <div class="form-group flexDev">
+          <div class="form-group flex">
             <label for="userEmail">Email Address</label>
-            <input id="userEmail" type="email" name="email" required placeholder="example@example.com" />
+            <input id="userEmail" type="email" name="email"  placeholder="example@example.com" />
           </div>
 
-          <div class="form-group flexDev">
+          <div class="form-group flex">
             <label for="github">GitHub Username</label>
-            <input id="github" type="text" name="github" required placeholder="@yourusername" />
+            <input id="github" type="text" name="github"  placeholder="@yourusername" />
           </div>
-
-          <!-- Submit Button -->
-          <div class="form-group flexDev">
-            <input type="submit" id="ticket" />
+          <div class="form-group flex">
+            <input type="submit"/>
           </div>
         </div>
       </div>

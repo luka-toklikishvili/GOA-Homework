@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Overpass", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(228, 11%, 9%)
+}
+
+.thank-you-card {
+    background: #1e252f;
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    color: white;
+
+}
+.selected-rating {
+    color: hsl(23, 43%, 51%);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 22px;
+    padding: 20px;
+}
+
+p {
+    font-size: 14px;
+    color:hsl(218, 8%, 38%);
+}

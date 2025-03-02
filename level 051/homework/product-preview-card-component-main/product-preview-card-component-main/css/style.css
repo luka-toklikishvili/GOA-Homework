@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inconsolata", serif;
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-card {
+    display: flex;
+    width: 600px;
+    background: white;
+    border-radius: 10px;
+}
+
+.product-image img {
+    width: 250px;
+    height: auto;
+}
+
+.product-details {
+    padding: 20px;
+}
+
+.category {
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: hsl(228, 12%, 48%);
+    height: 40px;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 5px;
+    width: 300px;
+    height: 50px;
+    font-weight: bold;
+
+}
+
+
+.description {
+    padding: 20px;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%)
+}
+
+.price {
+    margin: 10px 0;
+}
+
+.current-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: hsl(158, 36%, 37%);
+}
+
+.old-price {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    margin-left: 10px;
+}
+
+.add-to-cart {
+    width: 300px;
+    height: 50px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-to-cart:hover {
+    background-color: hsl(158, 42%, 18%);
+}
