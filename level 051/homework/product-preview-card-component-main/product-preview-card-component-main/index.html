@@ -2,30 +2,43 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
   <title>Frontend Mentor | Product preview card component</title>
 </head>
 
 <body>
-  <div class="product-card">
-    <div class="product-image">
-      <img src="./images/image-product-desktop.jpg" alt="Perfume">
-    </div>
-    <div class="product-details">
-      <p class="category">PERFUME</p>
-      <h2>Gabrielle Essence Eau De Parfum</h2>
-      <p class="description">
-        A floral, solar and voluptuous interpretation composed by Olivier Polge,
-        Perfumer-Creator for the House of CHANEL.
-      </p>
-      <div class="price">
-        <span class="current-price">$149.99</span>
-        <span class="old-price">$169.99</span>
+  <div class="flex justify-center item-center h-screen font-primary bg-cream">
+    <div class="flex justify-center item-center bg-white rounded-20">
+      <div class="h-img-primary">
+        <img class="h-full" src="./images/image-product-desktop.jpg" alt="Product image" />
       </div>
-      <button class="add-to-cart"><img src="./images/icon-cart.svg" alt=""> Add to Cart</button>
+      <div class="flex flex-col gap-40 p-40">
+        <h4 class="tracking-primary uppercase text-gray">Perfume</h4>
+        <h1 class="text-primary font-secondary font-bold max-w-300">
+          Gabrielle Essence Eau De Parfum
+        </h1>
+
+        <p class="text-gray max-w-300 leading-primary max-w-250">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="flex item-center gap-20 font-secondary">
+          <span class="text-primary font-bold text-green-500">$149.99</span>
+          <span class="text-line-though text-gray">$169.99</span>
+        </div>
+
+        <button type="button"
+          class="bg-hover-primary cursor-pointer bg-green-500 flex justify-center gap-10 item-center text-white rounded-10 p-20">
+          <img src="./images/icon-cart.svg" alt="Card icon" />
+          <span class="font-bold">Add to Cart</span>
+        </button>
+      </div>
     </div>
   </div>
 </body>

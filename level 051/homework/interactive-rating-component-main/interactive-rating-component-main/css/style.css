@@ -63,6 +63,14 @@ p {
     cursor: pointer;
 }
 
+a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
 .submit{
     letter-spacing: 4px;
     color: black;

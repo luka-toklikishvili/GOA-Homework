@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body {
+    font-family: "Manrope", sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.card {
+    display: flex;
+    width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.image {
+    width: 40%;
+    background: url('./images/drawers.jpg') center/cover;
+}
+
+.content {
+    padding: 20px;
+    width: 60%;
+}
+
+.h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.p1 {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+
+.name {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+
+.date {
+    font-size: 12px;
+    color: #999;
+    margin: 0;
+}
+
+
+
+.share-button {
+    background: #eee;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.share-menu {
+    bottom: 40px;
+    left: 50%;
+    background: #333;
+    color: white;
+    display: none;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 6px;
+    gap: 8px;
+}
+
+.share-menu span {
+    font-size: 12px;
+}
+
+.share-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.share-container:hover .share-menu {
+    display: flex;
+}

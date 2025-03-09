@@ -1,86 +1,179 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* fonts */
+.font-primary {
+    font-family: "Montserrat", sans-serif;
 }
 
-body {
-    font-family: "Inconsolata", serif;
-    background-color: hsl(30, 38%, 92%);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.font-secondary {
+    font-family: "Fraunces", serif;
 }
 
-.product-card {
-    display: flex;
-    width: 600px;
-    background: white;
-    border-radius: 10px;
+/* font wights */
+.font-medium {
+    font-weight: 500;
 }
 
-.product-image img {
-    width: 250px;
-    height: auto;
+.font-bold {
+    font-weight: 700;
 }
 
-.product-details {
-    padding: 20px;
-}
-
-.category {
-    font-size: 20px;
-    letter-spacing: 4px;
-    color: hsl(228, 12%, 48%);
-    height: 40px;
-}
-
-h2 {
-    font-size: 20px;
-    margin: 5px;
-    width: 300px;
-    height: 50px;
-    font-weight: bold;
-
-}
-
-
-.description {
-    padding: 20px;
-    font-size: 14px;
-    color: hsl(228, 12%, 48%)
-}
-
-.price {
-    margin: 10px 0;
-}
-
-.current-price {
-    font-size: 22px;
-    font-weight: bold;
+/* text colors */
+.text-green-500 {
     color: hsl(158, 36%, 37%);
 }
 
-.old-price {
-    font-size: 16px;
-    text-decoration: line-through;
+.text-green-700 {
+    color: hsl(158, 42%, 18%);
+}
+
+.text-black {
+    color: hsl(212, 21%, 14%);
+}
+
+.text-gray {
     color: hsl(228, 12%, 48%);
-    margin-left: 10px;
 }
 
-.add-to-cart {
-    width: 300px;
-    height: 50px;
-    background-color: hsl(158, 36%, 37%);
-    color: white;
+.text-cream {
+    color: hsl(30, 38%, 92%);
+}
+
+.text-white {
+    color: hsl(0, 0%, 100%);
+}
+
+/* text size */
+.text-primary {
+    font-size: 40px;
+}
+
+/* background color */
+.bg-green-500 {
+    background: hsl(158, 36%, 37%);
+}
+
+.bg-green-700 {
+    background: hsl(158, 42%, 18%);
+}
+
+.bg-black {
+    background: hsl(212, 21%, 14%);
+}
+
+.bg-gray {
+    background: hsl(228, 12%, 48%);
+}
+
+.bg-cream {
+    background: hsl(30, 38%, 92%);
+}
+
+.bg-white {
+    background: hsl(0, 0%, 100%);
+}
+
+/* flexbox */
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.item-center {
+    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+/* gap */
+.gap-40 {
+    gap: 40px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+/* gap */
+.gap-10 {
+    gap: 10px;
+}
+
+/* height */
+.h-screen {
+    height: 100vh;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.h-img-primary {
+    height: 580px;
+}
+
+/* width */
+.max-w-300 {
+    max-width: 300px;
+}
+
+.max-w-250 {
+    max-width: 251px;
+}
+
+/* border radius */
+.rounded-20 {
+    border-radius: 20px;
+}
+
+.rounded-10 {
     border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
 }
 
-.add-to-cart:hover {
-    background-color: hsl(158, 42%, 18%);
+/* paddings */
+.p-40 {
+    padding: 40px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+/* tracking  ----> letter spacing*/
+.tracking-primary {
+    letter-spacing: 10px;
+}
+
+/* leading  ----> line height */
+.leading-primary {
+    line-height: 25px;
+}
+
+/* text transform */
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* text decoration */
+.text-line-though {
+    text-decoration: line-through;
+}
+
+/* cursors */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* hover */
+.bg-hover-primary:hover {
+    background: hsl(158, 42%, 18%);
 }
