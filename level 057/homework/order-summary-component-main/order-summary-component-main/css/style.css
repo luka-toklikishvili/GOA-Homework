@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+    background: #e0e7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background: white;
+    width: 360px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.card-header {
+    padding: 100px;
+    color: white;
+    background: url(../images/illustration-hero.svg);
+}
+
+.card-header img {
+    width: 100px;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card-body h2 {
+    margin-bottom: 12px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.card-body p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+.plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f3f4f6;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.plan span {
+    font-weight: bold;
+    text-align: left;
+}
+
+.change {
+    color: #3b82f6;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    background: #3b82f6;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 15px;
+}
+
+.button:hover {
+    background: #2563eb;
+}
+
+.cancel {
+    font-size: 14px;
+    color: #777;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.cancel:hover {
+    color: #444;
+}
