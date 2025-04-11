@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkgray;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img {
+    width: 100%;
+}
+
+.card {
+    max-width: 500px;
+    height: 300px;
+    width: 400px;
+    background-color: rgb(158, 128, 104);
+    animation-name: slide-in;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

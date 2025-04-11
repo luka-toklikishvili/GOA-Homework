@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkgray;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    max-width: 500px;
+    height: 300px;
+    width: 400px;
+    background-color: rgb(104, 133, 158);
+    overflow: hidden;
+    animation-name: change-color;
+    animation-duration: 3000ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    margin: 0 auto;
+
+}
+
+@keyframes change-color{
+    20%{color: red;}
+    40%{color: blue;}
+    60%{color: blueviolet;}
+    80%{color: aqua;}
+    100%{color: yellow;}
+}

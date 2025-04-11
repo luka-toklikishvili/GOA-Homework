@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkgray;
+}
+
+.card {
+    max-width: 300px;
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    width: 300px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    animation-name: matrix;
+    animation-timing-function: ease;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes matrix {
+    0% {
+        opacity: 0;
+    }
+    20%{
+        transform: scale(1.25) translateY(100px);
+        background-color: aquamarine;
+    }
+    50%{
+        transform: scale(1.30) rotatex(90deg);
+        background-color: aqua;
+    }
+    80%{
+        transform: scale(1.40) rotateY(120deg) translateY(200px);
+        background-color: blueviolet;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}

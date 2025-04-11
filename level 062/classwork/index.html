@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f2f2f2;
+        }
+
+        .card {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: heartbeat;
+            animation-duration: 2000ms;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1) rotate(-45deg);
+            }
+
+            20% {
+                transform: scale(1.3) rotate(-45deg);
+            }
+
+            40% {
+                transform: scale(1) rotate(-45deg);
+            }
+
+            70% {
+                transform: scale(1.3) rotate(-45deg);
+            }
+
+            100% {
+                transform: scale(1) rotate(-45deg);
+            }
+        }
+
+
+        .delay-300 {
+            animation-delay: 75ms;
+        }
+
+        .delay-800 {
+            animation-delay: 100ms;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card"></div>
+    <div class="card delay-300">
+    </div>
+    <div class="card delay-800"></div>
+</body>
+
+</html>
