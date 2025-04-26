@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Layout Box</title>
+  <style>
+    body{
+        height: 200vh;
+    }
+
+
+    .outer-box {
+        background-color: red;
+      padding: 10px;
+      display: grid;
+      width: 300px;
+      height: 400px;
+      margin-left: 500px;
+    }
+
+    .inner-box {
+        background-color: purple;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      display: grid;
+    }
+
+    .green-box {
+        background-color: lime;
+      width: 60%;
+      height: 30%;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    ul{
+    position: fixed;
+    margin-top:-10px ;
+
+      background-color: #fffb00;
+      width: 100%;
+      color: rgb(0, 0, 0);
+      display: flex;
+      gap: 10px;
+      list-style: none;
+      padding: 10px 0;
+      z-index: 1;
+
+    }
+  </style>
+</head>
+<body>
+    <ul>
+        <li>Home</li>
+        <li>about</li>
+        <li>Contacts</li>
+
+    </ul>
+  <div class="outer-box">
+    <div class="inner-box">
+      <div class="green-box"></div>
+    </div>
+  </div>
+</body>
+</html>
