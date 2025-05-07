@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto";
+    height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat((1fr, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.card p {
+    margin: 0;
+    position: relative;
+}
+
+.card img {
+    width: 80%;
+
+}
+
+.card p {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    color: #555;
+    background: #fafafa;
+}
