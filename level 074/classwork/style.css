@@ -1,0 +1,13 @@
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius:25% ;
+}
+
+#box1 { background-color: red; }
+#box2 { background-color: green; }
+#box3 { background-color: blue; }
+#box4 { background-color: orange; }
+#box5 { background-color: purple; }
+#box6 { background-color: yellow; }
