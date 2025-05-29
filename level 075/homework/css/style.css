@@ -1,0 +1,18 @@
+    .animated-object {
+      width: 100px;
+      height: 100px;
+      background-color: coral;
+      animation-name: growShrink;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+
+    @keyframes growShrink {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+    }
