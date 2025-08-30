@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #myBox {
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+    }
+</style>
+
+<body>
+    <div id="myBox"></div>
+    <button id="myButton">Click here</button>
+
+    <script>
+        const box = document.getElementById("myBox");
+
+        box.addEventListener("mouseover", () => {
+            box.style.backgroundColor = "lightgreen";
+        });
+
+        box.addEventListener("mouseout", () => {
+            box.style.backgroundColor = "lightblue";
+        });
+
+        document.getElementById("myButton").addEventListener("click", () => {
+            console.log("The button was clicked!");
+        });
+        const sum = (a, b) => a + b;
+        console.log(sum(100, 50));
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">click meee</button>
+
+    <script>
+        const btn = document.getElementById("btn");
+
+        btn.onmousedown = () => {
+            document.body.style.backgroundColor = "orange";
+            btn.textContent = "Pressed!";
+        };
+
+        btn.onmouseup = () => {
+            document.body.style.backgroundColor = "white";
+            btn.textContent = "Released!";
+        };
+    </script>
+    <!--onmousedown — გამოიძახება მაშინ, როცა ღილაკზე დაჭერას იწყებ
+    onmouseup — გამოიძახება მაშინ, როცა დაჭერილ ღილაკს გაუშვებ-->
+</body>
+
+</html>

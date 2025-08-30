@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .box:nth-child(2) {
+        background-color: lightgreen;
+    }
+</style>
+
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+
+</body>
+<script>
+    const boxes = document.querySelectorAll(".box");
+
+    boxes.forEach(box => {
+        box.addEventListener("mouseover", () => {
+            box.style.width = "200px";
+            box.style.height = "200px";
+        });
+
+        box.addEventListener("mouseout", () => {
+            box.style.width = "100px";
+            box.style.height = "100px";
+        });
+    });
+</script>
+
+</html>
