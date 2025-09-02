@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .odd {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .even {
+            color: green;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="myList"></ul>
+    <script>
+        const ul = document.getElementById("myList");
+        const itemCount = 5;
+        for (let i = 1; i <= itemCount; i++) {
+            const li = document.createElement("li");
+
+            const text = `I am list item ${i}`;
+            li.textContent = text;
+
+            const className = (i % 2 === 0) ? "even" : "odd";
+            li.className = className;
+            ul.appendChild(li);
+        }
+    </script>
+</body>
+
+</html>

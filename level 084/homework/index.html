@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Car Rental</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+      <div class="flex items-center gap-2">
+        <span class="text-xl font-bold">Car Rental</span>
+      </div>
+      <nav class="hidden md:flex gap-6 text-gray-600 font-medium">
+        <a href="#" class="hover:text-indigo-600">Home</a>
+        <a href="#" class="hover:text-indigo-600">Vehicles</a>
+        <a href="#" class="hover:text-indigo-600">Details</a>
+        <a href="#" class="hover:text-indigo-600">About Us</a>
+        <a href="#" class="hover:text-indigo-600">Contact Us</a>
+      </nav>
+      <div class="text-right">
+        <p class="text-xs text-gray-500">Need help?</p>
+        <p class="font-semibold text-indigo-600">+996 247 1040</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Title -->
+  <section class="max-w-7xl mx-auto text-center py-10 px-4">
+    <h2 class="text-2xl md:text-3xl font-extrabold">Select a vehicle group</h2>
+  </section>
+
+  <!-- Filters -->
+  <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-center gap-3 mb-10">
+    <button class="px-4 py-2 rounded-lg bg-indigo-600 text-white text-sm font-medium">All vehicles</button>
+    <button class="px-4 py-2 rounded-lg border text-sm">Sedan</button>
+    <button class="px-4 py-2 rounded-lg border text-sm">Cabriolet</button>
+    <button class="px-4 py-2 rounded-lg border text-sm">Pickup</button>
+    <button class="px-4 py-2 rounded-lg border text-sm">SUV</button>
+    <button class="px-4 py-2 rounded-lg border text-sm">Minivan</button>
+  </div>
+
+  <!-- Cars Grid -->
+  <section class="max-w-7xl mx-auto px-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 pb-16">
+    
+    <!-- Card -->
+    <div class="bg-white rounded-xl shadow p-4 flex flex-col">
+      <img src="/level 082/homework/img/porshce.jpg" class="rounded mb-4" alt="Car">
+      <div class="flex justify-between items-center mb-1">
+        <h3 class="font-semibold">porshce</h3>
+        <span class="text-indigo-600 font-bold">$25 <span class="text-sm text-gray-500">/day</span></span>
+      </div>
+      <p class="text-sm text-gray-500 mb-3">Sedan</p>
+      <div class="flex flex-wrap gap-4 text-xs text-gray-500 mb-4">
+        <span>Automatic</span>
+        <span>5 seats</span>
+        <span>AC</span>
+      </div>
+      <button class="mt-auto bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700">
+        View Details
+      </button>
+    </div>
+
+    <div class="bg-white rounded-xl shadow p-4 flex flex-col">
+      <img src="/level 082/homework/img/mercedes.avif" class="rounded mb-4" alt="Car">
+      <div class="flex justify-between items-center mb-1">
+        <h3 class="font-semibold">Mercedes</h3>
+        <span class="text-indigo-600 font-bold">$35 <span class="text-sm text-gray-500">/day</span></span>
+      </div>
+      <p class="text-sm text-gray-500 mb-3">Sport</p>
+      <div class="flex flex-wrap gap-4 text-xs text-gray-500 mb-4">
+        <span>Manual</span>
+        <span>PB 95</span>
+        <span>AC</span>
+      </div>
+      <button class="mt-auto bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700">
+        View Details
+      </button>
+    </div>
+
+    <!-- Add more cards (Mercedes, Porsche, Maybach, etc.) -->
+
+  </section>
+
+</body>
+</html>

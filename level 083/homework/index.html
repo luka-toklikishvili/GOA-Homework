@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <div class="bg-white shadow-lg rounded-2xl p-6 w-96">
+    <h1 class="text-2xl font-bold text-center mb-4">📋 My Tasks</h1>
+
+    <!-- Add Task -->
+    <div class="flex mb-4">
+      <input id="taskInput" type="text" placeholder="New task..."
+        class="flex-grow border border-gray-300 rounded-l-xl p-2 focus:outline-none">
+      <button onclick="addTask()"
+        class="bg-blue-500 text-white px-4 rounded-r-xl hover:bg-blue-600">➕</button>
+    </div>
+
+    <!-- Task List -->
+    <ul id="taskList" class="space-y-2"></ul>
+  </div>
+
+  <script>
+    const taskInput = document.getElementById("taskInput");
+    const taskList = document.getElementById("taskList");
+
+    function addTask() {
+      const taskText = taskInput.value.trim();
+      if (taskText === "") return;
+
+      const li = document.createElement("li");
+      li.className = "flex items-center justify-between bg-gray-100 p-2 rounded-xl";
+
+      // Task text
+      const span = document.createElement("span");
+      span.textContent = taskText;
+
+      // Buttons
+      const actions = document.createElement("div");
+      actions.className = "space-x-2";
+
+      // Mark as complete
+      const completeBtn = document.createElement("button");
+      completeBtn.textContent = "✔";
+      completeBtn.className = "bg-green-500 text-white px-2 rounded hover:bg-green-600";
+      completeBtn.onclick = () => {
+        span.classList.toggle("line-through");
+        span.classList.toggle("text-gray-500");
+      };
+
+      // Delete
+      const deleteBtn = document.createElement("button");
+      deleteBtn.textContent = "🗑";
+      deleteBtn.className = "bg-red-500 text-white px-2 rounded hover:bg-red-600";
+      deleteBtn.onclick = () => li.remove();
+
+      actions.appendChild(completeBtn);
+      actions.appendChild(deleteBtn);
+
+      li.appendChild(span);
+      li.appendChild(actions);
+
+      taskList.appendChild(li);
+
+      taskInput.value = "";
+    }
+  </script>
+
+</body>
+</html>
+

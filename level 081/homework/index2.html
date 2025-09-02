@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="textContainer"></div>
+
+    <script>
+
+        const texts = [
+            "this is first text",
+            "second text",
+            "third text",
+            "fourth text",
+            "fifth text"
+        ];
+
+        const styles = [
+            "color: red; font-size: 18px;",
+            "color: blue; font-weight: bold;",
+            "color: green; font-size: 20px;",
+            "color: purple; text-decoration: underline;",
+            "color: orange; font-style: italic;"
+        ];
+
+        const container = document.getElementById("textContainer");
+        for (let i = 0; i < texts.length; i++) {
+            const p = document.createElement("p");
+            p.innerHTML = `hello world <span style="${styles[i]}">${texts[i]}</span>`;
+            container.appendChild(p);
+        }
+    </script>
+</body>
+
+</html>

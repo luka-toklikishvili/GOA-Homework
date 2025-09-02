@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .clone-effect {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="wrapper">
+        <p id="original">I am the original paragraph</p>
+    </div>
+
+    <script>
+        const wrapper = document.getElementById("wrapper");
+        const original = document.getElementById("original");
+        const clone = original.cloneNode(true);
+        clone.textContent = "I am the cloned paragraph";
+        clone.classList.add("clone-effect");
+        wrapper.appendChild(clone);
+    </script>
+</body>
+
+</html>

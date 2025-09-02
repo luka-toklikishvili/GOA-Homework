@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans bg-white text-gray-800">
+
+    <!-- Header Icons -->
+    <section class="max-w-6xl mx-auto py-10 px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div>
+            <div class="flex justify-center mb-2">
+                <svg class="w-10 h-10 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9 17v-2h6v2m-6 4h6a2 2 0 002-2v-6H7v6a2 2 0 002 2zm-3-10h12M5 7h14"></path>
+                </svg>
+            </div>
+            <h3 class="font-semibold text-lg">Availability</h3>
+            <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div>
+            <div class="flex justify-center mb-2">
+                <svg class="w-10 h-10 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"></path>
+                </svg>
+            </div>
+            <h3 class="font-semibold text-lg">Comfort</h3>
+            <p class="text-sm text-gray-500">Gravida sociis natoque penatibus.</p>
+        </div>
+        <div>
+            <div class="flex justify-center mb-2">
+                <svg class="w-10 h-10 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3"></path>
+                </svg>
+            </div>
+            <h3 class="font-semibold text-lg">Savings</h3>
+            <p class="text-sm text-gray-500">Vestibulum laoreet amet curabitur.</p>
+        </div>
+    </section>
+
+    <!-- Hero with image and checklist -->
+    <section class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center px-4 py-12">
+        <div>
+            <img src="./img/car with costumers.png" alt="Car with customers" class="rounded-lg shadow-md">
+        </div>
+        <div class="space-y-4">
+            <h2 class="text-xl font-semibold">Why choose us?</h2>
+            <ul class="space-y-3 text-gray-600">
+                <li class="flex items-start gap-2">
+                    <span class="text-indigo-600">✔</span> Exat sit semper lorem ipsum dolor sit amet.
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-indigo-600">✔</span> Ullam vitae rhoncus risus club arcu.
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-indigo-600">✔</span> Lobortis malesuada imperdiet tempus.
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-indigo-600">✔</span> Cras nulla aliquam non eleifend.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Cars Section -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-bold">Choose the car that suits you</h2>
+            <a href="#" class="text-indigo-600 font-medium flex items-center gap-1">View All →</a>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card -->
+            <div class="bg-white rounded-xl shadow p-4 flex flex-col">
+                <img src="./img/mercedes.avif" alt="Mercedes" class="mb-4 rounded">
+                <div class="flex justify-between items-center mb-2">
+                    <h3 class="font-semibold">Mercedes</h3>
+                    <span class="text-indigo-600 font-bold">$25</span>
+                </div>
+                <p class="text-sm text-gray-500 mb-3">Sedan</p>
+                <div class="flex gap-4 text-xs text-gray-500 mb-4">
+                    <span>Automatic</span> <span>5 Seats</span> <span>AC</span>
+                </div>
+                <button class="mt-auto bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700">
+                    View Details
+                </button>
+            </div>
+            <!-- Repeat for other cars -->
+            <div class="bg-white rounded-xl shadow p-4 flex flex-col">
+                <img src="./img/porshce.jpg" alt="Porsche" class="mb-4 rounded">
+                <div class="flex justify-between items-center mb-2">
+                    <h3 class="font-semibold">Porsche</h3>
+                    <span class="text-indigo-600 font-bold">$50</span>
+                </div>
+                <p class="text-sm text-gray-500 mb-3">SUV</p>
+                <div class="flex gap-4 text-xs text-gray-500 mb-4">
+                    <span>Automatic</span> <span>5 Seats</span> <span>AC</span>
+                </div>
+                <button class="mt-auto bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700">
+                    View Details
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-indigo-600 py-12 text-white">
+        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <h3 class="text-3xl font-bold">540+</h3>
+                <p>Cars</p>
+            </div>
+            <div>
+                <h3 class="text-3xl font-bold">20k+</h3>
+                <p>Customers</p>
+            </div>
+            <div>
+                <h3 class="text-3xl font-bold">25+</h3>
+                <p>Years</p>
+            </div>
+            <div>
+                <h3 class="text-3xl font-bold">20m+</h3>
+                <p>Miles</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

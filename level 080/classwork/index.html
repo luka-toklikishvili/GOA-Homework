@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style type="text/tailwindcss">
+        @theme {
+        --color-black: var(--black);
+
+        --spacing-base-12: 12px;
+        --spacing-base-20: 20px;
+        --spacing-base-28: 28px;
+        --spacing-base-40: 40px;
+        --spacing-base-72: 72px;
+      }
+      .container {
+        @apply max-w-[1440px] mx-auto px-base-72;
+      }
+      :root{
+        --black: rgb(0, 0, 0);
+      }
+    </style>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+        body {
+            font-family: "Inter";
+        }
+    </style>
+</head>
+
+<body>
+    <header class="py-base-28 container flex items-center justify-between text-black">
+</html>
