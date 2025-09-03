@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Switch Case Example</title>
+</head>
+
+<body>
+    <h2 id="output"></h2>
+
+    <script>
+        let day = parseInt(prompt("Enter a number between 1 and 5"));
+
+        let message;
+        switch (day) {
+            case 1:
+                message = "Day 1: Monday";
+                break;
+            case 2:
+                message = "Day 2: Tuesday";
+                break;
+            case 3:
+                message = "Day 3: Wednesday";
+                break;
+            case 4:
+                message = "Day 4: Thursday";
+                break;
+            case 5:
+                message = "Day 5: Friday";
+                break;
+            default:
+                message = "This day does not exist (choose 1–5)";
+        }
+
+        document.getElementById("output").textContent = message;
+    </script>
+</body>
+
+</html>
