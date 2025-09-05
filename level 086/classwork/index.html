@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-sm">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <div class="text-xl font-bold">Car Rental</div>
+      <nav>
+        <ul class="flex space-x-6 text-gray-600">
+          <li><a href="#" class="hover:text-black">Home</a></li>
+          <li><a href="#" class="font-semibold text-black">Vehicles</a></li>
+          <li><a href="#" class="hover:text-black">Details</a></li>
+          <li><a href="#" class="hover:text-black">About Us</a></li>
+          <li><a href="#" class="hover:text-black">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="flex items-center space-x-2 text-sm">
+        <span class="bg-purple-600 text-white px-4 py-2 rounded-lg">Need help? +996 247-1080</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Vehicle Group Selector -->
+  <section class="container mx-auto px-6 py-12">
+    <h2 class="text-2xl font-bold text-center mb-8">Select a vehicle group</h2>
+    
+    <!-- Filter Buttons -->
+    <div class="flex flex-wrap justify-center gap-3 mb-10">
+      <button class="px-4 py-2 bg-purple-600 text-white rounded-lg">All vehicles</button>
+      <button class="px-4 py-2 bg-gray-200 hover:bg-purple-100 rounded-lg">Sedan</button>
+      <button class="px-4 py-2 bg-gray-200 hover:bg-purple-100 rounded-lg">Cabriolet</button>
+      <button class="px-4 py-2 bg-gray-200 hover:bg-purple-100 rounded-lg">Pickup</button>
+      <button class="px-4 py-2 bg-gray-200 hover:bg-purple-100 rounded-lg">SUV</button>
+      <button class="px-4 py-2 bg-gray-200 hover:bg-purple-100 rounded-lg">Minivan</button>
+    </div>
+
+    <!-- Vehicle Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Card -->
+      <div class="bg-white shadow rounded-xl p-4 flex flex-col">
+        <div class="h-32 bg-gray-200 rounded-lg mb-4"></div>
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="font-semibold">Mercedes</h3>
+          <p class="text-purple-600 font-bold">$25 <span class="text-sm text-gray-500">/day</span></p>
+        </div>
+        <p class="text-sm text-gray-500 mb-3">Sedan</p>
+        <div class="flex items-center text-xs text-gray-500 space-x-3 mb-4">
+          <span>⚙️ Automat</span>
+          <span>⛽ Pb 95</span>
+          <span>❄️ AC</span>
+        </div>
+        <button class="mt-auto bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700">View Details</button>
+      </div>
+
+      <!-- Duplicate and edit -->
+      <div class="bg-white shadow rounded-xl p-4 flex flex-col">
+        <div class="h-32 bg-gray-200 rounded-lg mb-4"></div>
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="font-semibold">Toyota</h3>
+          <p class="text-purple-600 font-bold">$35 <span class="text-sm text-gray-500">/day</span></p>
+        </div>
+        <p class="text-sm text-gray-500 mb-3">Sedan</p>
+        <div class="flex items-center text-xs text-gray-500 space-x-3 mb-4">
+          <span>⚙️ Manual</span>
+          <span>⛽ Pb 95</span>
+          <span>❄️ AC</span>
+        </div>
+        <button class="mt-auto bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700">View Details</button>
+      </div>
+
+      <div class="bg-white shadow rounded-xl p-4 flex flex-col">
+        <div class="h-32 bg-gray-200 rounded-lg mb-4"></div>
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="font-semibold">Maybach</h3>
+          <p class="text-purple-600 font-bold">$70 <span class="text-sm text-gray-500">/day</span></p>
+        </div>
+        <p class="text-sm text-gray-500 mb-3">Sedan</p>
+        <div class="flex items-center text-xs text-gray-500 space-x-3 mb-4">
+          <span>⚙️ Automat</span>
+          <span>⛽ Pb 95</span>
+          <span>❄️ AC</span>
+        </div>
+        <button class="mt-auto bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700">View Details</button>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
