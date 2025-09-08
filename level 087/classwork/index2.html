@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+
+  <div class="relative w-[600px] h-[350px] overflow-hidden rounded-xl shadow-lg">
+    <!-- Slides -->
+    <div class="slides w-full h-full flex transition-transform duration-700">
+      <img src="./img/img1.jpg" class="w-full h-full object-cover">
+      <img src="./img/img2.jpg" class="w-full h-full object-cover">
+      <img src="./img/img3.jpg" class="w-full h-full object-cover">
+    </div>
+
+    <!-- Prev Button -->
+    <button id="prev" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-black p-2 rounded-full">
+      ←
+    </button>
+
+    <!-- Next Button -->
+    <button id="next" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-black p-2 rounded-full">
+      →
+    </button>
+  </div>
+
+  <script>
+    const slides = document.querySelector('.slides');
+    const slideCount = slides.children.length;
+    let index = 0;
+
+    function showSlide(i) {
+      slides.style.transform = `translateX(${-i * 600}px)`;
+    }
+
+    document.getElementById('next').addEventListener('click', () => {
+      index = (index + 1) % slideCount; // ბოლო სურათის შემდეგ ისევ პირველზე გადავა
+      showSlide(index);
+    });
+
+    document.getElementById('prev').addEventListener('click', () => {
+      index = (index - 1 + slideCount) % slideCount; // პირველ სურათზე ← დაჭერისას გადავა ბოლოზე
+      showSlide(index);
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans bg-white text-gray-800">
+
+    <!-- Header -->
+    <header class="flex justify-between items-center px-8 py-4 shadow">
+        <div class="flex items-center gap-2">
+            <span class="w-16"><img src="./img/car icon.png" alt=""></span>
+            <h1 class="font-bold">Car Rental</h1>
+        </div>
+        <nav class="hidden md:flex gap-6 text-sm">
+            <a href="#" class="hover:text-purple-600">Home</a>
+            <a href="#" class="hover:text-purple-600">Vehicles</a>
+            <a href="#" class="hover:text-purple-600">Deals</a>
+            <a href="#" class="hover:text-purple-600">About Us</a>
+            <a href="#" class="hover:text-purple-600 font-semibold">Contact Us</a>
+        </nav>
+        <div class="text-sm">
+            <p class="font-semibold">Need help?</p>
+            <p class="text-purple-600 font-bold">+987 876 5430</p>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="text-center py-10">
+        <h2 class="text-3xl font-bold">Contact Us</h2>
+        <p class="text-gray-500 mt-2">Home / Contact Us</p>
+    </section>
+
+    <!-- Booking & Info -->
+    <section class="grid md:grid-cols-2 gap-6 px-6 md:px-20 mb-12">
+        <!-- Booking Card -->
+        <div class="bg-gradient-to-r from-purple-600 to-indigo-600 p-6 rounded-2xl text-white">
+            <h3 class="font-semibold text-lg mb-4">Book your car</h3>
+            <form class="space-y-4">
+                <select class="w-full p-2 rounded text-black">
+                    <option>Car type</option>
+                </select>
+                <select class="w-full p-2 rounded text-black">
+                    <option>Place of rental</option>
+                </select>
+                <select class="w-full p-2 rounded text-black">
+                    <option>Place of return</option>
+                </select>
+                <input type="date" class="w-full p-2 rounded text-black" />
+                <input type="date" class="w-full p-2 rounded text-black" />
+                <button class="bg-yellow-400 text-black font-bold w-full py-2 rounded">Book now</button>
+            </form>
+        </div>
+        <!-- Image -->
+        <div class="rounded-2xl overflow-hidden shadow">
+            <img src="./img/buggati.png" alt="Car" class="w-full h-full object-cover" />
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="grid md:grid-cols-4 gap-6 px-6 md:px-20 text-center mb-12">
+        <div>
+            <p class="font-bold">📍 Address</p>
+            <p>Oxford Ave, Cary, NC 27511</p>
+        </div>
+        <div>
+            <p class="font-bold">📧 Email</p>
+            <p>me@rpl.yahoo.com</p>
+        </div>
+        <div>
+            <p class="font-bold">📞 Phone</p>
+            <p>+987 567 65401</p>
+        </div>
+        <div>
+            <p class="font-bold">🕒 Opening Hours</p>
+            <p>Sun-Mon: 10am - 10pm</p>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="px-6 md:px-20 mb-12">
+        <h3 class="text-2xl font-bold mb-6 text-center">Latest blog posts & news</h3>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="rounded-xl overflow-hidden shadow">
+                <img src="./img/toyota.webp" class="w-full" />
+                <div class="p-4">
+                    <h4 class="font-semibold">How To Choose The Right Car</h4>
+                    <p class="text-sm text-gray-500 mt-2">News | March 2024</p>
+                </div>
+            </div>
+            <div class="rounded-xl overflow-hidden shadow">
+                <img src="./img/plan.png" class="w-full" />
+                <div class="p-4">
+                    <h4 class="font-semibold">Which plan is right for me?</h4>
+                    <p class="text-sm text-gray-500 mt-2">News | March 2024</p>
+                </div>
+            </div>
+            <div class="rounded-xl overflow-hidden shadow">
+                <img src="./img/fast car.webp" class="w-full" />
+                <div class="p-4">
+                    <h4 class="font-semibold">Enjoy Speed, Choice & Total Control</h4>
+                    <p class="text-sm text-gray-500 mt-2">News | March 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Logos -->
+    <section class="flex justify-center gap-10 items-center py-8 border-t">
+        <span class="text-3xl">Toyota</span>
+        <span class="text-3xl">Ford</span>
+        <span class="text-3xl">Jeep</span>
+        <span class="text-3xl">Audi</span>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 px-6 md:px-20 py-10">
+        <div class="grid md:grid-cols-4 gap-10">
+            <!-- About -->
+            <div>
+                <h4 class="font-bold text-white mb-3">Car Rental</h4>
+                <p class="text-sm">Paucibus facilisis pellentesque dictum turpis. Massa sit laoreet massa id...</p>
+            </div>
+            <!-- Contact -->
+            <div>
+                <h4 class="font-bold text-white mb-3">Contact</h4>
+                <p>📍 Oxford Ave, Cary, NC 27511</p>
+                <p>📧 me@rpl.yahoo.com</p>
+                <p>📞 +987 567 65401</p>
+            </div>
+            <!-- Links -->
+            <div>
+                <h4 class="font-bold text-white mb-3">Useful Links</h4>
+                <ul class="space-y-1 text-sm">
+                    <li><a href="#" class="hover:text-white">About Us</a></li>
+                    <li><a href="#" class="hover:text-white">FAQ</a></li>
+                    <li><a href="#" class="hover:text-white">Pricing</a></li>
+                </ul>
+            </div>
+            <!-- App -->
+            <div>
+                <h4 class="font-bold text-white mb-3">Download App</h4>
+                <div class="flex flex-col gap-2">
+                    <img src="./img/app store.jpg" class="rounded w-16" alt="App Store" />
+                    <img src="./img/gogle play.webp" class="rounded w-16"alt="Google Play" />
+                </div>
+            </div>
+        </div>
+        <p class="text-center text-sm text-gray-500 mt-8">© Copyright Car Rental 2024 | Design by Figma.com</p>
+    </footer>
+
+</body>
+
+</html>

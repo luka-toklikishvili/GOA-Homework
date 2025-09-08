@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!--რა არის event loop-->
+    <!--Event Loop არის მნიშნელოვანი კონცეფცია/მექანიზმი ჯავასკრიპტში, რომელიც ასინქრონულ პროგრამირებას საშუალებას აძლევს გაუმკლავდეს ამოცანებს ეფექტურად-->
+
+    <!--- რა განსხვავებაა Call Stack-სა და Callback Queue-ს შორის?
+საკუთარი სიტყვებით ახსენი, რა ფუნქცია აქვს თითოეულს და როგორ ურთიერთქმედებენ ისინი-->
+
+    <!--Call Stack ეს არის ადგილი სადაც მიმდინარე კოდი სრულდება-->
+    <!--Callback Queue ეს არის ლოდინის ადგილი ასინქრონული კოდისთვის-->
+
+    <!--3) დამატებითი კითხვა: რატომ არ გადადის Callback Queue-დან ფუნქცია პირდაპირ Call Stack-ში?-->
+
+    <!--Callback Queue-დან ფუნქცია მხოლოდ Event Loop-ის მეშვეობით გადადის Call Stack-ში და მხოლოდ მაშინ როცა Stack თავისუფალია
+ასე ინახება მიმდევრობა და სტაბილურობა კოდის შესრულებაშ--->
+
+    <!--4) რა არის Event Loop-ის როლი JavaScript-ში?
+ წარმოიდგინე, რომ Event Loop ადამიანივით საქმეს ასრულებს. დაახასიათე მისი "დღიური რუტინა".-->
+
+    <!--Event Loop-ის მთავარი მისიაა აკონტროლოს, როდის გადავიდეს Call Stack-ში  ახალი დავალება Callback Queue-დან ის არის აკონტროლებს  რომ არაფერი არ ჩაიკარგოს და ყველაფერი თავის დროზე შესრულდეს.-->
+
+
+
+    <script>
+
+        console.log("1: program starts");
+
+        setTimeout(() => {
+            console.log("2: setTimeout callback");
+        }, 2000);
+
+        console.log("3: program continius");
+    </script>
+
+</body>
+
+</html>
