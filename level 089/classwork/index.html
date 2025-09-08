@@ -1,0 +1,48 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Human {
+            constructor(name, surname, age) {
+                this.name = name;
+                this.surname = surname;
+                this.age = age;
+            }
+
+            greeting(gamesCount) {
+
+                console.log(`Hello ${this.name} ${this.surname} Games count:${gamesCount} `)
+            }
+
+            get speak() {
+                console.log(`G A M A R J O B A`)
+            }
+            set someWord(word) {
+                console.log(word)
+            }
+        }
+
+        const newHuman = new Human("davit", "grdzelo", 50);
+        const newHuman1 = new Human("gio", "abuashvili", 1500);
+
+        newHuman.greeting(44)
+        newHuman1.greeting()
+        newHuman.speak
+        newHuman.someWord = "Winner Takes IT All"
+        console.log(newHuman.someWord)
+        console.log(newHuman)
+        console.log(newHuman1)
+
+    </script>
+
+</body>
+
+</html>
