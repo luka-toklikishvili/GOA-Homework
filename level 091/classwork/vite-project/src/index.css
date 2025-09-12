@@ -1,0 +1,21 @@
+.Title {
+  display: flex;
+  font-size: xx-large;
+  color: red;
+  justify-content: center;
+}
+
+.div1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.div2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+li{
+  list-style-type: none;
+}
