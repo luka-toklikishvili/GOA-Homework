@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+* {
+  font-family: 'Outfit', sans-serif;
+}
+
+.profilepic {
+  border-radius: 100%;
+}
+
+p,
+i {
+  color: rgba(203, 212, 255, 0.678);
+
+}
+
+hr {
+  border: rgba(203, 212, 255, 0.30) solid 0.5px;
+}
